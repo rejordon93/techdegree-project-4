@@ -1,0 +1,133 @@
+/** /** 
+ * Treehouse FSJS Techdegree
+ * Random Quote Generator - CSS
+ */
+
+body {
+    background-color: #36b55c;
+    color: white;
+    font-family: 'Hahmlet', serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+ul,
+p {
+    text-align: center;
+    list-style: none;
+    padding: .10rem;
+    font-size: 1rem;
+
+}
+
+
+#quote-box {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    line-height: .5;
+}
+
+.quote {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.1;
+    position: relative;
+    margin: 0;
+}
+
+.quote:before,
+.quote:after {
+    font-size: 3rem;
+    line-height: 2.5rem;
+    position: absolute;
+}
+
+.quote:before {
+    content: "“";
+    top: .25em;
+    left: -.5em;
+}
+
+.quote:after {
+    content: "”";
+    bottom: -.1em;
+    margin-left: .1em;
+    position: absolute;
+}
+
+.source {
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    text-align: right;
+    margin-right: 4em;
+}
+
+.source:before {
+    content: "—";
+}
+
+.citation {
+    font-style: italic;
+}
+
+.citation:before {
+    content: ", ";
+    font-style: normal;
+}
+
+.year:before {
+    content: ", ";
+    font-style: normal;
+}
+
+#buttons {
+    display: inline-block;
+    bottom: 5%;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+}
+
+.button {
+    background-color: #36b55c;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    padding: 15px 0;
+    width: 12em;
+    display: inline-block;
+    margin: 20px;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, .25);
+}
+
+.button:focus {
+    outline: none;
+}
+
+@media (min-width: 420px) {
+    .quote {
+        font-size: 4rem;
+    }
+
+    .quote:before,
+    .quote:after {
+        font-size: 6rem;
+    }
+
+    .source {
+        font-size: 1.25rem;
+    }
+}
+
+#tag-legend {
+    padding: 15px;
+}
